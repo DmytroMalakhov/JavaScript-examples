@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+    function sieve(n){
+        S=[];
+        S[1]=0;
+        for(k=2;k<=n; k++)
+            S[k]=k;
+        for(k=2;k*k<=n; k++){
+            if(S[k]==k){
+                for(l=k*k; l<=n; l+=k){
+                    S[l]=0;
+                }
+            }
+        }
+        var filterS = S.filter(function(filt){
+            return filt!=0 && filt>10000;
+        });
+        var rev = filterS.reverse();
+        var otv;
+
+        function palindrome(num) {
+            var tmp = num, res = 0, dig;
+            while (tmp) {
+                dig = tmp % 10;
+                res = res * 10 + dig;
+                tmp = (tmp - dig) / 10;
+            }
+            return res == num;
+        }
+
+        for (i=0; i<rev.length; i++){
+            for (j=0; j<rev.length; j++){
+                otv = rev[i]*rev[j];
+                if(palindrome(otv)){
+                    document.write(otv+" ");
+                }
+                /*else {
+                    document.write("0");
+                }*/
+            }
+        }
+    }
+    sieve(100000);
+
+</script>
+</body>
+</html>

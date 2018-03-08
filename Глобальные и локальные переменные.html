@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Глобальные и локальные переменные</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //Если мы обьявляем переменную в фун-ии то она локальная, в противном случае - глобальная;
+        //Переменную Variable_2 = 5 мы обьявили в фун-ии и она действительна ТОЛЬКО для фун-ии!!!
+        var variable_1 = 10;
+        var variable_2 = 20;
+        function test () {
+            variable_1++;
+            var variable_2 = 5;
+        }
+        test();
+        document.write("Variable_1 = " + variable_1 + ", " + "Variable_2 = " + variable_2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Строковые операции</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var text = "Моя строка";
+        num = "Текст пример: 'Моя строка'";
+        num += "\nДлинна строки - " + text.length + " символов;";
+        num += "\nСтрока в верхнем регистре - " + text.toUpperCase() + ";";
+        num += "\nСтрока в нижнем регистре - " + text.toLowerCase() + ";";
+        num += "\nОбрезанна строчка - " + text.substring(0, 4) + ";";
+        //Массив начинается с 0!!!
+        num += "\n3-й символ - " + text.charAt("2") + ";";
+        num += "\nСлово 'строка' начинается с индекса - " + text.indexOf("строка") + ";";
+        //Если слово не найдено в строке то оно будет имет индекс "-1"!!!
+        num += "\nСлово 'Привет' начинается с индекса - " + text.indexOf("Привет") + ";";
+        alert(num);
+    </script>
+</body>
+</html>

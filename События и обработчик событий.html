@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>События и обработчик событий</title>
+    <script type="text/javascript">
+        function buttonClick (button) {
+            alert("Вы нажали на кнопку. Ее имя " + button.name + ", " + "ее значение равно " + button.value + ".")
+        }
+        var counter = 0;
+        function onMouseCouner(element) {
+            counter++;
+            element.innerHTML = "Навели " + counter + " раз";
+        }
+    </script>
+</head>
+<body onload="alert('Cтраница загружена')">
+    <p>Если скрипт написан в HTML, то его лучше подключать в теге HEAD. <br>Script - файл - лучше подключать внизу тега BODY</p>
+    <input type="button" name="boris" value="Click me" onclick="buttonClick(this)">
+    <span onmouseover="onMouseCouner(this)">Навели 1 раз</span>
+</body>
+</html>

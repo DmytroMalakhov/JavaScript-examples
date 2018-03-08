@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Условный оператор (if)</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // ===================================1===================================
+        // B if при сравнении двух чисел нужно писать два знака ==;
+        // != - означает не равно
+        // if (x > y && bool = true) - означает, что и то и то условие должно выполняться
+        // if (x > y || bool = true) - означает, что либо то либо то условие должно выполняться
+
+        var x = 6;
+        var y = 7;
+        var bool = true
+        if (x > y) {
+            document.write("x > y это значит, что " + x + " " + ">" + " " + y);
+        } else if (x === y) {
+            document.write("x = y это значит, что " + x + " " + "=" + " " + y);
+        } else {
+            document.write("x < y это значит, что " + x + " " + "<" + " " + y);
+        }
+    </script>
+</body>
+</html>

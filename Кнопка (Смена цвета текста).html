@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Кнопка (Смена цвета текста)</title>
+</head>
+<body>
+    <p id="text">ТЕКСТ</p>
+    <button onclick="changeColoris('Blue');">Blue</button>
+    <button onclick="changeColoris('Red');">Red</button>
+    <script type="text/javascript">
+        function changeColoris (newColor) {
+            var color = document.getElementById("text");
+            color.style.color = newColor;
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../JQuery/.idea/JQuery.iml" filepath="$PROJECT_DIR$/../JQuery/.idea/JQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JS.iml" filepath="$PROJECT_DIR$/.idea/JS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../OSPanel/domains/Predilection.bl/.idea/Predilection.bl.iml" filepath="$PROJECT_DIR$/../OSPanel/domains/Predilection.bl/.idea/Predilection.bl.iml" />
+    </modules>
+  </component>
+</project>

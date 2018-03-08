@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Матем.операции (document)</title>
+</head>
+<body>
+<script type="text/javascript">
+    var x = 15;
+    var y;
+    var result;
+    y = 10;
+    result = x + y;
+    document.write("x = " + x);
+    document.write("<br>" + "y = " + y);
+    document.write("<br>" + "Сумма это  x + y = result  и равна " + result);
+    //Добавление к результату икса
+    result +=x;
+    document.write("<br>" + "Сумма это x + result = " + result);
+    //Вычитание от результата икса
+    result -=y;
+    document.write("<br>" + "Разница это result - y = " + result);
+    //Умножение на результат икса
+    result *=x;
+    document.write("<br>" + "Произведение это result * x = " + result);
+    //Деление на результат икса
+    result /=x;
+    document.write("<br>" + "Частное это result / x = " + result);
+    document.write("<br>");
+
+    //Добавление к результату 1
+    result++;
+    document.write("<br>" + "Добавление к результату 1 = " + result);
+    //Вычитание от результата 1
+    result--;
+    document.write("<br>" + "Вычитание от результата 1 = " + result);
+    document.write("<br>");
+
+    //Не правильный вывод суммы
+    document.write("<br>" + "Не правильный вывод суммы " + x + "+" + y + "=" + x + y);
+    //ПРАВИЛЬНЫЙ ВЫВОД СУММЫ
+    document.write("<br>" + "Правильный вывод суммы " + x + "+" + y + "=" + (x + y));
+    document.write("<br>");
+
+    //Правильное добавление строчных чисел
+    var str_1 = Number("12");
+    var str_2 = "24";
+    document.write("<br>" + "Правильное добавление строчных чисел ", str_1 + Number(str_2));
+
+    //Как можно просумировать два числа
+    var firstNum = 12;
+    var secondNum = 24;
+    document.write("<br>" + "Правильное cуммирование двух чисел: ", firstNum + secondNum);
+    document.write("<br>");
+
+    //Булевские переменные (Может быть <, >, <=, >=)
+    var bool
+    var x = 6;
+    var z = 7;
+    bool = x > z;
+    document.write("<br>" + "Булевские переменные это 6 > 7 = " + bool);
+    document.write("<br>");
+
+    //Остача при деление
+    document.write("Остача при деление это " + 10 + "%" + 7 + "=" + (10%7));
+</script>
+</body>
+</html>

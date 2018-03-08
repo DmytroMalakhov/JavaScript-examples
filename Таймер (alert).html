@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таймер (alert)</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var id = setInterval("nameFunction()", 1000);
+        var counter = 0;
+
+        function nameFunction() {
+            counter++;
+            alert("Секунд прошло - " + counter);
+            if(counter == 3) clearInterval(id);
+        }
+    </script>
+</body>
+</html>
